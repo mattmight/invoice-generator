@@ -1,0 +1,27 @@
+From	2014-02-01						
+To	2014-02-28						
+							
+Name	My Name, Ph.D.	Customer Name					
+Address	My Street	Customer Company					
+Address	My City, My State, My Zip	Customer Floor					
+Address		Customer Street					
+Address		Customer City, State, Zip					
+Phone	My Phone	Customer Phone					
+Email	My Email	Customer Email					
+							
+							
+Rate	Regular	500					
+Rate	Fieldwork	700					
+							
+							
+Date	Time on	Time off	Category	Description	Minutes	Rate	Amount
+2014-02-11			Travel	Purchased plane tickets for Feb 16-17			$300.00
+2014-02-15	11:00 PM	11:59 PM	Regular	Reviewed case history	59	$500.00	$491.67
+2014-02-16	9:10 AM	9:50 AM	Regular	Searched for relevant data	40	$500.00	$333.33
+2014-02-16	2:10 PM	2:30 PM	Fieldwork	Collected site samples	20	$700.00	$233.33
+2014-02-16	4:02 PM	5:00 PM	Fieldwork	Collected site samples	58	$700.00	$676.67
+2014-02-16	9:00 PM	9:45 PM	Regular	Conducted lab experiment	45	$500.00	$375.00
+2014-02-16	9:58 PM	10:31 PM	Regular	Analyzed experimental results	33	$500.00	$275.00
+2014-02-16	11:30 PM	11:45 PM	Regular	Constructed new hypothesis	15	$500.00	$125.00
+2014-02-16			Travel	Lunch at airport			$10.12
+2014-02-16			Travel	Hotel			$125.00
