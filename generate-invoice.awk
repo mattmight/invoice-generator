@@ -11,6 +11,7 @@ BEGIN {
   print "\\parskip=0.1in" ;
   print "\\parindent=0in" ;
 
+  print "\\usepackage{datetime}" ;
 
   print "\\usepackage{palatino}"; 
 
@@ -31,7 +32,7 @@ $1 == "From" {
 $1 == "To" {
   to = $2 ;
 
-  print "\\begin{center}{\\Large \\textbf{Invoice: " from " to " to "}}\\end{center}" ;
+  print "{\\Large \\textbf{Invoice: " from " to " to "}}\\hfill \\today\\\\\n" ;
 }
 
 
@@ -135,9 +136,15 @@ END {
 
   print "\\end{tabular}\n\n" ;
 
+ 
   printf "Sub-total (Travel): \\$%'.2f\n\n", travel_total ;
 
+
+  print "\\vfill" ;  
+
   printf "{\\Large\\textbf{Total due}\\hfill\\$%'.2f}\n\n", travel_total + item_total ;
+
+  print "Please send payment by check to Provider's address within 30 business days." ;
 
   print "\\end{document}" ;
 }

@@ -1,10 +1,12 @@
 \documentclass{article}
 \parskip=0.1in
 \parindent=0in
+\usepackage{datetime}
 \usepackage{palatino}
 \usepackage{fullpage}
 \begin{document}
-\begin{center}{\Large \textbf{Invoice: 2014-02-01 to 2014-02-28}}\end{center}
+{\Large \textbf{Invoice: 2014-02-01 to 2014-02-28}}\hfill \today\\
+
 \textbf{Provider} \mbox{}~\hfill{} \textbf{Recipient} \\
 My Name, Ph.D.\mbox{}~\hfill Customer Name \\
 My Street\mbox{}~\hfill Customer Company \\
@@ -62,6 +64,8 @@ Sub-total (Regular): \$1,600.00 \\Sub-total (Fieldwork): \$910.00 \\
 
 Sub-total (Travel): \$435.12
 
+\vfill
 {\Large\textbf{Total due}\hfill\$2,945.12}
 
+Please send payment by check to Provider's address within 30 business days.
 \end{document}
