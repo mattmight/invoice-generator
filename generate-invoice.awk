@@ -64,6 +64,10 @@ $1 == "Rate" {
   printf "\\textbf{%s} & \\$%'.2f / hour \\\\\n", $2, $3 ;
 }
 
+$9 != "" {
+  invoice_num = $9 ;
+}
+
 seen["Rate"] && ($1 != "Rate") {
   print "\\end{tabular}" ;
   delete seen["Rate"] ;
@@ -144,7 +148,7 @@ END {
 
   printf "{\\Large\\textbf{Total due}\\hfill\\$%'.2f}\n\n", travel_total + item_total ;
 
-  print "Please send payment by check to Provider's address within 30 business days." ;
+  print "Please send payment by check to Provider's address within 30 business days.\\hfill \\framebox{Invoice No. " invoice_num "}" ;
 
   print "\\end{document}" ;
 }
