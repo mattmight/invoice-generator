@@ -87,7 +87,7 @@ $1 == "Date" {
 }
 
 $1 == "Inline" {
-  printf $2 "\n"
+  printf $2 "\\\\\n"
 }
 
 
