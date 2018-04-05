@@ -86,6 +86,10 @@ $1 == "Date" {
 
 }
 
+$1 == "Inline" {
+  printf $2 "\n"
+}
+
 
 # If there is an hourly rate for this category:
 rate[$4] && (from <= $1 && $1 <= to) {
